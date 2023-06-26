@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background: #2f2fa2;
+}
+
+.container {
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+header {
+    background: #1f1f8b;
+    padding: 14px 0;
+    color: white;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgb(10,10,10);
+    flex: 1;
+}
+
+.logo h3 {
+    font-family: "Sweet Chili";
+}
+
+.menu-itens {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-itens ul {
+    list-style-type: none;
+    flex: 1;
+}
+
+.menu-itens ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.menu-itens a {
+    color: rgb(219, 218, 218);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-itens a:hover {
+    color: white;
+}
+
+.menu-itens > a {
+    color: white;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.search {
+    position: relative;
+    margin-right: 40px;
+}
+
+.search input {
+    color: rgb(10,10,10);
+    padding: 3px 10px;
+    outline: 0;
+    border-radius: 5px 0 0 5px;
+    font-family: 'Montserrat';
+    border: 3px solid rgb(41,41,41);
+}
+
+.search i {
+    cursor: pointer;
+    position: absolute;
+    top: 0.7px;
+    right: -31px;
+    padding: 4px 8px;
+    background: #5555df;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid rgb(41,41,41);
+    transition: 0.4s;
+}
+
+.search i:hover {
+    background: #3e3ec7;
+}
+
+section.introduction {
+    min-height: 500px;
+    background-image: url('../images/849790.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.layer-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 66, 66, 0.4);
+}
+
+section.introduction .text-introduction {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(10,10,10);
+}
+
+.text-introduction h2 {
+    font-size: 38px;
+    padding: 30px 0;
+}
+
+.text-introduction p {
+    font-size: 20px;
+}
+
+.populars {
+    position: relative;
+    top: -80px;
+}
+
+.populars > .container {
+    max-width: 978px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 2%;
+    -webkit-box-shadow: 1px 3px 7px 2px #000000; 
+    box-shadow: 1px 3px 7px 2px #000000;
+}
+
+.populars > .container > h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+}
+
+.populars .card {
+    display: flex;
+    margin: 30px 7px 0 7px;
+    width: calc((100% / 3) - 14px);
+    border: 5px solid rgb(247, 245, 245);
+    background-color: rgb(202, 202, 202);
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: 0.5s transform;
+}
+
+.populars .card:hover {
+    transform: scale(1.1,1.1);
+}
+
+.card .img-card {
+    width: 30%;
+    padding-top: 30%;
+    background-size: contain;
+}
+
+.card .text-card {
+    width: 70%;
+    padding: 10px;
+}
+
+section.form {
+    width: 100%;
+    margin-top: -80px;
+    margin: -50px 0 30px 0;
+    background: white;
+    box-shadow: 2px 2px 2px black;
+}
+
+section.form > .container {
+    text-align: center;
+}
+
+section.form > .container h3 {
+    padding-top: 20px;
+    font-size: 38px;
+}
+
+section.form > .container p {
+    padding: 20px 0;
+}
+
+section.form > .container form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 2% 40px 2%;
+}
+
+section.form > .container input,
+section.form > .container textarea {
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    resize: vertical;
+    padding: 7px;
+    font-family: 'Montserrat';
+}
+
+section.form > .container input {
+    height: 35px;
+}
+
+section.form > .container textarea {
+    height: 120px;
+}
+
+footer {
+    background: #1f1f8b;
+    padding: 14px 0;
+    color: white;
+    border-bottom: 1px solid rgb(41, 41, 41);
+}
+
+footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2%;
+}
+
+footer > .container p {
+    font-size: 11px;
+    text-align: left;
+    max-width: 400px;
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: "Sweet Chili";
+    src: url('../fonts/sweet-chili.ttf');
+}
+
+@media screen and (max-width: 968px){
+
+    .menu-itens ul,
+    .menu-itens .search {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .populars .card {
+        width: calc((100% / 2) - 14px);
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .logo {
+        padding-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 530px){
+
+    .populars .card {
+        width: calc(100% - 14px);
+    }
+
+}
